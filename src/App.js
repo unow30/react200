@@ -1,5 +1,5 @@
 import "./styles.css";
-import LifecycleEx from "./R006_LifecycleEx";
+import LifecycleEx from "./R008_LifecycleEx";
 
 export default function App() {
   return (
