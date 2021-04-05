@@ -2,3 +2,17 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+div {
+  background-color: rgb(162, 127, 243);
+  padding: 40px;
+  text-align: end;
+  /* text-align: center,left,right,jstify; */
+}
+
+h1 {
+  color: white;
+  background-color: #2efe2e;
+  padding: 10px;
+  font-family: 굴림;
+}

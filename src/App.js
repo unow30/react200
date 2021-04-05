@@ -1,12 +1,12 @@
 import "./styles.css";
-import TestComponent from "./testComponent";
+import LifecycleEx from "./R005_LifecycleEx";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <TestComponent />
+      <h1>start react 200</h1>
+      <p>css 적용하기</p>
+      <LifecycleEx />
     </div>
   );
 }
