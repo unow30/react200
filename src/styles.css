@@ -16,3 +16,7 @@ h1 {
   padding: 10px;
   font-family: 굴림;
 }
+
+Props {
+  text-align: left;
+}
