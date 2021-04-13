@@ -2,6 +2,8 @@
 
 Created with CodeSandbox
 
+## class component
+
 [react200_002](https://github.com/unow30/react200/blob/main/workingList/react200_002.md)  
 [react200_003](https://github.com/unow30/react200/blob/main/workingList/react200_003.md)  
 [react200_004](https://github.com/unow30/react200/blob/main/workingList/react200_004.md)  
@@ -18,3 +20,12 @@ Created with CodeSandbox
 [react200_023 props의 자식 컴포넌트에 node 전달하기](https://github.com/unow30/react200/blob/main/workingList/react200_023.md)  
 [react200_024 state사용](https://github.com/unow30/react200/blob/main/workingList/react200_024.md)  
 [react200_025 setState()로 state변경](https://github.com/unow30/react200/blob/main/workingList/react200_025.md)  
+[react200_026 forceUpdate()로 화면 강제 새로고침](https://github.com/unow30/react200/blob/main/workingList/react200_026.md)
+[react200_027 Component사용하기(class형 컴포넌트)](https://github.com/unow30/react200/blob/main/workingList/react200_027.md)
+[react200_028 PureComponent사용하기 (class형 컴포넌트)](https://github.com/unow30/react200/blob/main/workingList/react200_028.md)  
+[react200_029 shallow-equal사용하기 (class형 컴포넌트)](https://github.com/unow30/react200/blob/main/workingList/react200_029.md)
+
+## function component
+
+[react200_030 함수형 컴포넌트 사용하기](https://github.com/unow30/react200/blob/main/workingList/react200_030.md)  
+[react200_031 hook 사용하기](https://github.com/unow30/react200/blob/main/workingList/react200_031.md)

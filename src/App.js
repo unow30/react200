@@ -1,12 +1,12 @@
 import "./styles.css";
-import SetState from "./list/R25_SetState";
+import ReactHook from "./list/R031_ReactHook";
 
 export default function App() {
   return (
     <div className="App">
       <h1>start react 200</h1>
       <p>css 적용하기</p>
-      <SetState />
+      <ReactHook />
     </div>
   );
 }

@@ -9,8 +9,8 @@ export default class R024_ReactState extends Component {
   }
 
   StateChange = (flag) => {
-    if (flag == "direct") this.state.StateString = "리엑트";
-    if (flag == "setState") this.setState({ StateString: "리엑트" });
+    if (flag === "direct") this.state.StateString = "리엑트";
+    if (flag === "setState") this.setState({ StateString: "리엑트" });
   };
 
   render() {
