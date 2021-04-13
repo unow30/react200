@@ -49,7 +49,7 @@ export default class ShallowEqual extends Component {
   }
 }
 /**
- * shallow-equal 패키지는 PureComponent에서 state의 값의 변경을 비교하는 것과
+ *  shallow-equal 패키지는 PureComponent에서 state의 값의 변경을 비교하는 것과
  * 동일한 기능을 하는 함수를 제공한다. shallowEqualArrays()함수를 사용하면 문자열과 배열은 값만 비교한다.
  * 객체는 PureComponent와 동일하게 참조 값을 비교한다.
  * shallow-equal 패키지를 설치하고 다음 과정을 살펴본다.
