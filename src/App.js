@@ -1,5 +1,5 @@
 import "./styles.css";
-import ReactstrapAlerts from "./reactstrap/R034_ReactstrapAlerts";
+import ReactstrapBreadcrumbs from "./reactstrap/R036_ReactstrapBreadcrumbs";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <h1>start react 200</h1>
       <p>css 적용하기</p>
-      <ReactstrapAlerts />
+      <ReactstrapBreadcrumbs />
     </div>
   );
 }
