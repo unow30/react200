@@ -3,8 +3,8 @@ import datatype from "prop-types";
 
 export default class R020_PropsObjVal extends Component {
   render() {
-    let { ObjectJson } = this.props;
-    return <div style={{ padding: "0px" }}>{JSON.stringify(ObjectJson)}</div>;
+    let { objectjson } = this.props;
+    return <div style={{ padding: "0px" }}>{JSON.stringify(objectjson)}</div>;
   }
 }
 //BooleanTrueFalse는 처음에 false값으로 컴포넌트에 넘어왔다.
