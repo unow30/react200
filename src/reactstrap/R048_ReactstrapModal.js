@@ -5,11 +5,12 @@ class R048_ReactstrapModal extends Component {
   constructor(props) {
     super(props);
     this.state = { modal: false };
-    this.response = { item: "리스폰데이터" };
+    this.response = { item: "리스폰데이터" }; //setResponse가 없어서 상태변경 안됨
   }
 
   toggle = (e) => {
     this.setState({ modal: !this.state.modal });
+    this.setResponse({ item: "isreal" });
   };
   /**
    * setState 반복을 막으려면?

@@ -6,12 +6,6 @@ export default class R047_ReactstrapListGroup extends Component {
     return alert("button");
   };
 
-  changeAttribute = (e) => {
-    let current = document.getElementsByClassName("isDisable");
-    current.disabled = false;
-    console.log(current);
-  };
-
   render() {
     return (
       <>
@@ -19,10 +13,10 @@ export default class R047_ReactstrapListGroup extends Component {
           <ListGroupItem color="danger" className="justify-content-between">
             Badge<Badge pill>200</Badge>
           </ListGroupItem>
-          <ListGroupItem className="isDisable" disabled tag="a" href="#">
+          <ListGroupItem disabled tag="a" href="#">
             Disabled로 비활성화
           </ListGroupItem>
-          <ListGroupItem tag="button" onClick={this.changeAttribute}>
+          <ListGroupItem tag="button" onClick="#">
             비활성화 / 활성화 버튼
           </ListGroupItem>
           <ListGroupItem tag="a" href="http://example.com">
@@ -34,11 +28,5 @@ export default class R047_ReactstrapListGroup extends Component {
         </ListGroup>
       </>
     );
-  }
-
-  componentDidMount() {
-    let current = document.getElementsByClassName("isDisable");
-
-    console.log(current);
   }
 }
