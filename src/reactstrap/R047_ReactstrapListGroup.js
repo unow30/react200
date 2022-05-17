@@ -16,9 +16,7 @@ export default class R047_ReactstrapListGroup extends Component {
           <ListGroupItem disabled tag="a" href="#">
             Disabled로 비활성화
           </ListGroupItem>
-          <ListGroupItem tag="button" onClick="#">
-            비활성화 / 활성화 버튼
-          </ListGroupItem>
+          <ListGroupItem tag="button">비활성화 / 활성화 버튼</ListGroupItem>
           <ListGroupItem tag="a" href="http://example.com">
             Link
           </ListGroupItem>
