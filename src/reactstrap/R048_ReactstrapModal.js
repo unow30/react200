@@ -10,7 +10,6 @@ class R048_ReactstrapModal extends Component {
 
   toggle = (e) => {
     this.setState({ modal: !this.state.modal });
-    this.setResponse({ item: "isreal" });
   };
   /**
    * setState 반복을 막으려면?

@@ -4,6 +4,7 @@ import React from "react";
 // import ReactstrapForm from "./reactstrap/R044_ReactstrapForm";
 import ListGroup from "./reactstrap/R047_ReactstrapListGroup";
 import Modal from "./reactstrap/R048_ReactstrapModal";
+import Table from "./reactstrap/R054_ReactstrapTable";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -17,6 +18,7 @@ export default function App() {
       {/* <ReactstrapCollapse />
       <ReactstarpFade />
       <ReactstrapForm /> */}
+      <Table />
     </div>
   );
 }
