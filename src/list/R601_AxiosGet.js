@@ -7,7 +7,7 @@ class R061_AxiosGet extends Component {
 			console.log(res);
 		});
 	}
-
+//말좀들어
 	render() {
 		return <h1>axiosGet</h1>;
 	}
