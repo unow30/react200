@@ -12,7 +12,7 @@ class R066_onClick extends Component {
 			<>
 				<button onClick={e=> this.buttonClick("Click button")}>click button</button>
 				<div onClick={e=> this.buttonClick("Click div")}>Click div</div>
-				<a href="javascript:" onClick={this.buttonClick}>Click a</a>
+				<a href="#:" onClick={this.buttonClick}>Click a</a>
 			</>
 		)
 	}
