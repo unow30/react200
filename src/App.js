@@ -4,6 +4,7 @@ import ReactonClick from './list/R066_onClick';
 import ReactChange from './list/R067_onChange';
 import ReactMouseMove from './list/R068_onMouseMove'
 import ReactMouseOver from './list/R069_onMouseOver'
+import ReactMouseOut from './list/R070_onMouseOut'
 
 import 'bootstrap/dist/css/bootstrap.css';
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
 			<ReactChange/>
 			<ReactMouseMove/>
 			<ReactMouseOver/>
+			<ReactMouseOut/>
 		</div>
 	);
 }
