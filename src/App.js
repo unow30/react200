@@ -1,16 +1,24 @@
-import React from 'react';
-import './App.css';
-import ContextApi from './Context/R076_ContextApi'
-import ContextApi2 from './Context/R077_ContextApi'
+import React, {Component} from 'react';
+import StrAddButton from './StrAddButton'
 
-import 'bootstrap/dist/css/bootstrap.css';
-export default function App() {
-	return (
-		<div className="App">
-			<h1>start react 200</h1>
-			<ContextApi/>
-			<ContextApi2/>
-		</div>
-	);
+export default class App extends Component{
+	render(){
+		console.log(this.props.store.getState())
+		return (
+			<div>
+				<h1>start react 200</h1>
+				<span>{this.props.store.getState().data.str}</span><br/>
+				<StrAddButton store={this.props.store}/>
+			</div>
+		)
+	}
 }
 
+/*
+* console.log(this.props.store)
+* store method
+* dispatch()
+* getState()
+* replaceReducer(nextReducer)
+* subscribe(listener)
+* */
