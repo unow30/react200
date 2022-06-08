@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import './App.css'
 import App from "./App";
 import {createStore} from 'redux';
+import {Provider} from 'react-redux'
 import reducers from './redux/reducers';
 
 const store = createStore(reducers);
@@ -14,13 +15,23 @@ const store = createStore(reducers);
 //리덕스 루트 렌더
 const listener = () =>{
   ReactDOM.render(
-    <App store={store}/>,
+    <Provider store={store}>
+      <App indexProp={'react'}/>
+    </Provider>,
     document.getElementById('root')
   );
 };
 
 store.subscribe(listener);
 listener();
+
+/*
+* react-redux는 redux를 react와 연동해서 사용하기 편리하도록 만든 라이브러리다.
+* store를 하위 컴포넌트에 매번 상속하지 않고 사용할 수 있다.
+* 스토어 데이터를 사용, 변경하는 코드를 모듈화해 컴포넌트 내에 중복된 코드 사용을 최소화할 수 있다.
+* 컨텍스트 api에서 사용했던 Provider와 동일하다. 모든 하위 컴포넌트에서 데이터를 사용할 수 있다.
+* */
+
 /*
 * 리덕스 패키지의 createstore를 임포트한다.
 * createStore 함수의 파라미터로 reducers폴더 경로를 넘긴다.
