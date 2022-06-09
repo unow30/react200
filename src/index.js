@@ -2,11 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './App.css'
 import App from "./App";
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux'
 import reducers from './redux/reducers';
 
-const store = createStore(reducers);
+const CallMiddleware = store => nextMiddle => action => {
+  console.log('1. reducer 실행 전');
+  console.log('2. action.type: '+action.type+', store str :'+store.getState().data.str);
+  let result = nextMiddle(action);
+  console.log('3. reducer 실행 후');
+  console.log('4. action.type : '+action.type+', store str : '+store.getState().data.str);
+  return result;
+}
+/*
+ *
+ * CallMiddleware는 다중 컬링 구조로, 세 가지 인자를 순서대로 받는다.
+ * 첫 번째 인자는 스토어, 두 번째 인자는 다음 미들웨어를 호출하는 함수로
+ * 예제에서는 미들웨어가 1개이기 때문에 리듀서를 호출한다.
+ * 세 번째 인자는 액션이다.
+ * */
+
+
+const store = createStore(reducers, applyMiddleware(CallMiddleware));
 
 /*
 * We recommend using the configureStore method of the @reduxjs/toolkit package, which replaces createStore.
