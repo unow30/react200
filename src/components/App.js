@@ -6,6 +6,7 @@ import ReactRouter2 from './R089_reactRouter2'
 import '../css/new.css'
 import HeaderAdmin from './Header/Header admin'
 import Footer from './Footer/Footer'
+import LoginForm from './LoginForm'
 
 export default class App extends Component {
 	render(){
@@ -13,12 +14,11 @@ export default class App extends Component {
 			<div className={'App'}>
 					{/*<Route exact path='/what' component={reactRouter}/>*/}
 				{/*<Route exact path='/reactRouter2' component={reactRouter2}/>*/}
-
-
 				<HeaderAdmin/>
 				<Routes>
-					<Route exact path='/' element={<ReactRouter/>}/>
+					{/*<Route exact path='/' element={<ReactRouter/>}/>*/}
 					<Route exact path='/reactRouter2' element={<ReactRouter2/>}/>
+					<Route exact path='/' element={<LoginForm/>}/>
 				</Routes>
 				<Footer/>
 			</div>
