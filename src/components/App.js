@@ -8,6 +8,9 @@ import HeaderAdmin from './Header/Header admin'
 import Footer from './Footer/Footer'
 import LoginForm from './LoginForm'
 
+import ReactDebounce from './R094_reactDebounce'
+import ReactThrottle from './R095_reactThrottle'
+
 export default class App extends Component {
 	render(){
 		return (
@@ -17,8 +20,10 @@ export default class App extends Component {
 				<HeaderAdmin/>
 				<Routes>
 					{/*<Route exact path='/' element={<ReactRouter/>}/>*/}
-					<Route exact path='/reactRouter2' element={<ReactRouter2/>}/>
 					<Route exact path='/' element={<LoginForm/>}/>
+					<Route exact path='/reactRouter2' element={<ReactRouter2/>}/>
+					<Route exact path='/Debounce' element={<ReactDebounce/>}/>
+					<Route exact path='/Throttle' element={<ReactThrottle/>}/>
 				</Routes>
 				<Footer/>
 			</div>
