@@ -6,15 +6,15 @@ class LoginForm extends Component {
 		return (
 			<section className="main">
 				<div className="m_login">
-					<h3><span><img src={require("../img/main/log_img.png")} alt="" /></span>LOGIN</h3>
+					<h3><span><img src={require("../img/main/log_img.png").default} alt="" /></span>LOGIN</h3>
 					<div className="log_box">
 						<form onSubmit={this.handleSubmit}>
 							<div className="in_ty1">
-								<span><img src={require("../img/main/m_log_i3.png")} alt="" /></span>
+								<span><img src={require("../img/main/m_log_i3.png").default} alt="" /></span>
 								<input type="text" id="email_val" name="email" placeholder="이메일" onChange={this.handleChange} />
 							</div>
 							<div  className="in_ty1">
-								<span className="ic_2"><img src={require("../img/main/m_log_i2.png")} alt="" /></span>
+								<span className="ic_2"><img src={require("../img/main/m_log_i2.png").default} alt="" /></span>
 								<input type="password" id="pwd_val" name="password" placeholder="비밀번호" onChange={this.handleChange} />
 							</div>
 							<ul className="af">
@@ -29,5 +29,9 @@ class LoginForm extends Component {
 		);
 	}
 }
-
+/*
+* img 파일을 require하면 리엑트는 이것을 객체로 인식하고 가져온다.
+* 핫 모듈 로딩을 제공하는 웹팩의 성질 때문이다?
+* 이미지 자체를 표시하기 위해서는 require().default를 하거나 import from 으로 가져와 사용하면 된다.
+* */
 export default LoginForm;
